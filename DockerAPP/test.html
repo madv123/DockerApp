@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Shipments</title>
+</head>
+<body>
+    <h1>Track Shipments</h1>
+    <p>Enter up to 25 tracking numbers, one per line.</p>
+    <form action="/track" method="post">
+        <textarea name="trackingNumbers" id="trackingNumbers" cols="30" rows="10"></textarea>
+        <br>
+        <button type="submit">Track</button>
+    </form>
+
+    <h2>Recently Tracked</h2>
+    <p>Log in or Sign up to view your recently tracked shipments.</p>
+
+    <h2>Help</h2>
+    <p>
+        <a href="/help/track-by-reference-number">Track by Reference Number</a>
+        <br>
+        <a href="/help/import-tracking-numbers">Import Tracking Numbers</a>
+        <br>
+        <a href="/help/other-tracking-services">Other Tracking Services</a>
+    </p>
+</body>
+</html>
